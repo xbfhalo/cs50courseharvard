@@ -6,7 +6,7 @@ void print_row(int spaces, int length);
 int main(void) 
 {
     int height = get_int("Height: ");
-    int spaces = get_int("How many spaces?: ");
+    int spaces = height-1;
     for (int y = 1; y < height+1; y++) {
         print_row(spaces, y);
         spaces--;
